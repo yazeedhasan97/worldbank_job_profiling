@@ -1,0 +1,165 @@
+Tree Rules...
+def predict(exper, , disab, governorate_a, governorate_al_, governorate_al, governorate_al_m, governorate_, governorate_, governorate_, governorate_j, governorate_ma, governorate, governorate_outside_j, governorate_ta, governorate_, education_bachelor_or_, education_middle_di, education_secondary_or_, education_vocational_tra):
+|    if experience <= 3.0:
+|    |    if experience <= 0.5:
+|    |    |    if age <= 35.0:
+|    |    |    |    if governorate_amman <= 0.5:
+|    |    |    |    |    if education_bachelor_or_above <= 0.5:
+|    |    |    |    |    |    if governorate_irbid <= 0.5:
+|    |    |    |    |    |    |    if age <= 25.0:
+|    |    |    |    |    |    |    |    if governorate_zarqa <= 0.5:
+|    |    |    |    |    |    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    |    |    |    |    |    return 360  -> 9
+|    |    |    |    |    |    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    |    |    |    |    |    if governorate_al_aqaba <= 0.5:
+|    |    |    |    |    |    |    |    |    |    |    if governorate_maadaba <= 0.5:
+|    |    |    |    |    |    |    |    |    |    |    |    if governorate_al_kirk <= 0.5:
+|    |    |    |    |    |    |    |    |    |    |    |    |    if governorate_balqa <= 0.5:
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    return 546  -> 14
+|    |    |    |    |    |    |    |    |    |    |    |    |    else:  # if governorate_balqa > 0.5
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    return 345  -> 15
+|    |    |    |    |    |    |    |    |    |    |    |    else:  # if governorate_al_kirk > 0.5
+|    |    |    |    |    |    |    |    |    |    |    |    |    return 312  -> 16
+|    |    |    |    |    |    |    |    |    |    |    else:  # if governorate_maadaba > 0.5
+|    |    |    |    |    |    |    |    |    |    |    |    return 285  -> 17
+|    |    |    |    |    |    |    |    |    |    else:  # if governorate_al_aqaba > 0.5
+|    |    |    |    |    |    |    |    |    |    |    return 302  -> 18
+|    |    |    |    |    |    |    |    else:  # if governorate_zarqa > 0.5
+|    |    |    |    |    |    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    |    |    |    |    |    return 296  -> 20
+|    |    |    |    |    |    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    |    |    |    |    |    return 1090  -> 21
+|    |    |    |    |    |    |    else:  # if age > 25.0
+|    |    |    |    |    |    |    |    return 252  -> 22
+|    |    |    |    |    |    else:  # if governorate_irbid > 0.5
+|    |    |    |    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    |    |    |    return 211  -> 24
+|    |    |    |    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    |    |    |    return 1341  -> 25
+|    |    |    |    |    else:  # if education_bachelor_or_above > 0.5
+|    |    |    |    |    |    if age <= 25.0:
+|    |    |    |    |    |    |    if governorate_zarqa <= 0.5:
+|    |    |    |    |    |    |    |    if governorate_irbid <= 0.5:
+|    |    |    |    |    |    |    |    |    return 427  -> 29
+|    |    |    |    |    |    |    |    else:  # if governorate_irbid > 0.5
+|    |    |    |    |    |    |    |    |    return 638  -> 30
+|    |    |    |    |    |    |    else:  # if governorate_zarqa > 0.5
+|    |    |    |    |    |    |    |    return 300  -> 31
+|    |    |    |    |    |    else:  # if age > 25.0
+|    |    |    |    |    |    |    return 268  -> 32
+|    |    |    |    else:  # if governorate_amman > 0.5
+|    |    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    |    if education_bachelor_or_above <= 0.5:
+|    |    |    |    |    |    |    return 313  -> 35
+|    |    |    |    |    |    else:  # if education_bachelor_or_above > 0.5
+|    |    |    |    |    |    |    return 640  -> 36
+|    |    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    |    return 2396  -> 37
+|    |    |    else:  # if age > 35.0
+|    |    |    |    return 483  -> 38
+|    |    else:  # if experience > 0.5
+|    |    |    if governorate_amman <= 0.5:
+|    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    if governorate_irbid <= 0.5:
+|    |    |    |    |    |    if governorate_zarqa <= 0.5:
+|    |    |    |    |    |    |    return 301  -> 43
+|    |    |    |    |    |    else:  # if governorate_zarqa > 0.5
+|    |    |    |    |    |    |    return 275  -> 44
+|    |    |    |    |    else:  # if governorate_irbid > 0.5
+|    |    |    |    |    |    return 290  -> 45
+|    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    if governorate_irbid <= 0.5:
+|    |    |    |    |    |    if age <= 25.0:
+|    |    |    |    |    |    |    if governorate_zarqa <= 0.5:
+|    |    |    |    |    |    |    |    if governorate_balqa <= 0.5:
+|    |    |    |    |    |    |    |    |    return 546  -> 50
+|    |    |    |    |    |    |    |    else:  # if governorate_balqa > 0.5
+|    |    |    |    |    |    |    |    |    return 236  -> 51
+|    |    |    |    |    |    |    else:  # if governorate_zarqa > 0.5
+|    |    |    |    |    |    |    |    return 714  -> 52
+|    |    |    |    |    |    else:  # if age > 25.0
+|    |    |    |    |    |    |    return 441  -> 53
+|    |    |    |    |    else:  # if governorate_irbid > 0.5
+|    |    |    |    |    |    return 724  -> 54
+|    |    |    else:  # if governorate_amman > 0.5
+|    |    |    |    if age <= 25.0:
+|    |    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    |    return 375  -> 57
+|    |    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    |    return 1458  -> 58
+|    |    |    |    else:  # if age > 25.0
+|    |    |    |    |    return 400  -> 59
+|    else:  # if experience > 3.0
+|    |    if governorate_amman <= 0.5:
+|    |    |    if governorate_zarqa <= 0.5:
+|    |    |    |    if age <= 35.0:
+|    |    |    |    |    if governorate_balqa <= 0.5:
+|    |    |    |    |    |    if age <= 25.0:
+|    |    |    |    |    |    |    if governorate_irbid <= 0.5:
+|    |    |    |    |    |    |    |    return 523  -> 66
+|    |    |    |    |    |    |    else:  # if governorate_irbid > 0.5
+|    |    |    |    |    |    |    |    return 483  -> 67
+|    |    |    |    |    |    else:  # if age > 25.0
+|    |    |    |    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    |    |    |    return 251  -> 69
+|    |    |    |    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    |    |    |    if governorate_irbid <= 0.5:
+|    |    |    |    |    |    |    |    |    if experience <= 7.5:
+|    |    |    |    |    |    |    |    |    |    return 328  -> 72
+|    |    |    |    |    |    |    |    |    else:  # if experience > 7.5
+|    |    |    |    |    |    |    |    |    |    return 261  -> 73
+|    |    |    |    |    |    |    |    else:  # if governorate_irbid > 0.5
+|    |    |    |    |    |    |    |    |    return 420  -> 74
+|    |    |    |    |    else:  # if governorate_balqa > 0.5
+|    |    |    |    |    |    if age <= 25.0:
+|    |    |    |    |    |    |    return 223  -> 76
+|    |    |    |    |    |    else:  # if age > 25.0
+|    |    |    |    |    |    |    return 221  -> 77
+|    |    |    |    else:  # if age > 35.0
+|    |    |    |    |    if governorate_irbid <= 0.5:
+|    |    |    |    |    |    if experience <= 7.5:
+|    |    |    |    |    |    |    return 221  -> 80
+|    |    |    |    |    |    else:  # if experience > 7.5
+|    |    |    |    |    |    |    return 264  -> 81
+|    |    |    |    |    else:  # if governorate_irbid > 0.5
+|    |    |    |    |    |    return 323  -> 82
+|    |    |    else:  # if governorate_zarqa > 0.5
+|    |    |    |    if experience <= 12.5:
+|    |    |    |    |    if age <= 35.0:
+|    |    |    |    |    |    if experience <= 7.5:
+|    |    |    |    |    |    |    if age <= 25.0:
+|    |    |    |    |    |    |    |    return 662  -> 87
+|    |    |    |    |    |    |    else:  # if age > 25.0
+|    |    |    |    |    |    |    |    return 473  -> 88
+|    |    |    |    |    |    else:  # if experience > 7.5
+|    |    |    |    |    |    |    return 329  -> 89
+|    |    |    |    |    else:  # if age > 35.0
+|    |    |    |    |    |    if experience <= 7.5:
+|    |    |    |    |    |    |    return 203  -> 91
+|    |    |    |    |    |    else:  # if experience > 7.5
+|    |    |    |    |    |    |    return 209  -> 92
+|    |    |    |    else:  # if experience > 12.5
+|    |    |    |    |    return 203  -> 93
+|    |    else:  # if governorate_amman > 0.5
+|    |    |    if age <= 25.0:
+|    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    return 231  -> 96
+|    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    return 1175  -> 97
+|    |    |    else:  # if age > 25.0
+|    |    |    |    if experience <= 7.5:
+|    |    |    |    |    if age <= 35.0:
+|    |    |    |    |    |    if education_secondary_or_below <= 0.5:
+|    |    |    |    |    |    |    return 217  -> 101
+|    |    |    |    |    |    else:  # if education_secondary_or_below > 0.5
+|    |    |    |    |    |    |    return 676  -> 102
+|    |    |    |    |    else:  # if age > 35.0
+|    |    |    |    |    |    return 280  -> 103
+|    |    |    |    else:  # if experience > 7.5
+|    |    |    |    |    if age <= 35.0:
+|    |    |    |    |    |    return 585  -> 105
+|    |    |    |    |    else:  # if age > 35.0
+|    |    |    |    |    |    if experience <= 12.5:
+|    |    |    |    |    |    |    return 241  -> 107
+|    |    |    |    |    |    else:  # if experience > 12.5
+|    |    |    |    |    |    |    return 215  -> 108
