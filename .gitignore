@@ -4,6 +4,11 @@
 .Ruserdata
 /venv/
 venv/
-*.pyc
+.pyc
 /__pycache__/
 __pycache__/
+.dta
+.rar
+.zip
+.idea/
+.DS_Store
